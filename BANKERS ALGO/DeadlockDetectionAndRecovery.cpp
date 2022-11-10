@@ -3,7 +3,6 @@ using namespace std;
 
 bool SafetyAlgorithm(vector<vector<int>> AllocatedResources, vector<vector<int>> MaxResource, vector<vector<int>> NeedResources, vector<int> AvailableResources, vector<bool> &Finished, vector<int> &SafeSequence, const int noOfProcesses, const int noOfResources)
 {
-
     int safeSequenceCounter = 0;
 
     for (int i = 0; i < noOfProcesses; i++)
@@ -35,12 +34,7 @@ bool SafetyAlgorithm(vector<vector<int>> AllocatedResources, vector<vector<int>>
             }
         }
     }
-
-    // for(int i=0; i<noOfProcesses; i++){
-    //     if(!Finished[i]) cout<<i<<" NF\n";
-    //     else cout<<i<<" F\n";
-    // }
-
+    
     for (int i = 0; i < noOfProcesses; i++)
         if (SafeSequence[i] == -1)
             return false;
