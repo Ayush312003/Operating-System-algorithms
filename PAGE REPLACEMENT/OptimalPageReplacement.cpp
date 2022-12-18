@@ -56,6 +56,5 @@ int main()
         cout<<endl;
     }
     cout << "Total Faults are : " << faults << endl;
-
     return 0;
 }
